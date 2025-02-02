@@ -1,48 +1,38 @@
-# Astro Starter Kit: Basics
+# Sabuts - Aplicació de Joc de Preguntes
 
-```sh
-npm create astro@latest -- --template basics
-```
+Benvinguts al repositori de Sabuts, una aplicació de joc de preguntes desenvolupada amb Ionic 8 i Angular 17, utilitzant Firebase com a backend.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Requeriments Tècnics
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Per instal·lar i utilitzar l'aplicació Sabuts, es recomanen els següents requisits mínims:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Dispositius mòbils:** Android compatible (iOS a futures versions)
 
-## 🚀 Project Structure
+## Funcionalitats Principals
 
-Inside of your Astro project, you'll see the following folders and files:
+- Registre i autenticació d'usuaris
+- Creació i participació en partides de preguntes
+- Sistema d'amistats i sol·licituds d'amistat
+- Perfil d'usuari personalitzable
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Privacitat i Seguretat
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Les dades dels usuaris es xifren en trànsit
+- Els usuaris poden sol·licitar l'eliminació del seu compte i dades associades
+- Política de privacitat detallada disponible a l'aplicació
 
-## 🧞 Commands
+## Eliminació del Compte
 
-All commands are run from the root of the project, from a terminal:
+Els usuaris poden eliminar el seu compte seguint aquests passos:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Obrir l'aplicació Sabuts
+2. Anar a la secció "Perfil" i fer clic al botó de Configuració
+3. Seleccionar l'opció "Eliminar compte"
+4. Confirmar la decisió
 
-## 👀 Want to learn more?
+L'eliminació del compte és irreversible i implica la supressió de totes les dades associades.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Suport
+
+Per a qualsevol dubte o assistència, contacteu amb el nostre equip de suport a: jbohigues.playstore@gmail.com
+
