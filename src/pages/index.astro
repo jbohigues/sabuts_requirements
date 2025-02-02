@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/logo_with_name.webp";
 ---
 
 <Layout>
   <main>
-    <img src="assets/logo_with_name.webp" alt="Logo Sabuts" />
+    <Image src={logo} alt="Logo Sabuts" />
     <h1>Benvinguts a l'aplicació de Sabuts</h1>
     <p>
       Us donem la benvinguda a l'aplicació de Sabuts, la vostra plataforma de
@@ -52,59 +54,3 @@ import Layout from "../layouts/Layout.astro";
     </p>
   </main>
 </Layout>
-
-<style>
-  main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-
-    img {
-      max-width: 15rem;
-    }
-
-    article {
-      margin-bottom: 4rem;
-    }
-  }
-
-  p {
-    width: 100%;
-    max-width: 70ch;
-  }
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    color: #121212;
-    background-color: #f0f0f088;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  a:hover {
-    background-color: #e0e0e0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  a:hover .link-icon {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .link-text {
-    margin-right: 10px;
-  }
-
-  .link-icon {
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
-  }
-</style>
