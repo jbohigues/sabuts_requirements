@@ -1,11 +1,110 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <img src="/public/logo_with_name.webp" alt="Logo Sabuts" />
+    <h1>Benvinguts a l'aplicació de Sabuts</h1>
+    <p>
+      Us donem la benvinguda a l'aplicació de Sabuts, la vostra plataforma de
+      joc de preguntes i respostes. En aquesta pàgina trobareu tota la
+      informació necessària per utilitzar l'aplicació de manera correcta i
+      segura.
+    </p>
+    <section>
+      <article>
+        <h2>Política de privacitat</h2>
+        <p>
+          La nostra política de privacitat és un document essencial que detalla
+          com tractem les vostres dades personals i quins són els vostres drets
+          de privacitat. Us animem a llegir-la atentament per entendre com
+          protegim la vostra informació i com podeu exercir els vostres drets.
+        </p>
+        <a href="./privacy-policy" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">Política de privacitat</span>
+          <span class="link-icon">&#8594;</span>
+        </a>
+      </article>
+      <article>
+        <h2>Eliminació del Compte</h2>
+        <p>
+          La secció d'eliminació del compte està dissenyada per oferir-vos un
+          control total sobre la vostra informació personal i les vostres dades
+          dins de Sabuts. Si decidiu que ja no voleu utilitzar la nostra
+          aplicació o simplement desitgeu eliminar el vostre compte, aquesta
+          secció us guiarà pas a pas a través del procés d'eliminació.
+        </p>
+        <a href="./delete-account" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">Eliminar compte</span>
+          <span class="link-icon">&#8594;</span>
+        </a>
+      </article>
+    </section>
+
+    <p>
+      Entenem que la privacitat i el control de les vostres dades són
+      fonamentals. Per això, us oferim aquestes eines per gestionar la vostra
+      presència a Sabuts de la manera que considereu més adequada. Si teniu
+      qualsevol dubte o necessiteu assistència addicional, no dubteu a contactar
+      amb el nostre equip de suport. Estem aquí per ajudar-vos en tot el que
+      necessiteu.
+    </p>
+  </main>
 </Layout>
+
+<style>
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+
+    img {
+      max-width: 15rem;
+    }
+
+    article {
+      margin-bottom: 4rem;
+    }
+  }
+
+  p {
+    width: 100%;
+    max-width: 70ch;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #121212;
+    background-color: #f0f0f088;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  a:hover .link-icon {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .link-text {
+    margin-right: 10px;
+  }
+
+  .link-icon {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+  }
+</style>
